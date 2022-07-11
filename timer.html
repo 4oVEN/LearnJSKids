@@ -4,14 +4,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Условия</title>
+  <title>Timer</title>
 </head>
 <body>
+  <div id="number"></div>
   <script>
-    let dogName = 'Ernest';
-    if(dogName == 'Ernest'){
-      alert('Ты нашел алмаз монах!');
+    let count = 0;
+    function updataCount(){
+      count = count + 1;
+      document.getElementById('number').innerHTML = count;
+      setTimeout(updataCount, 1000);
     }
+    updataCount();
   </script>
 </body>
 </html>
