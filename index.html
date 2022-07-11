@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Игра для охраны</title>
+  <title>Running line</title>
 </head>
 <body>
-    <div id="board"></div>
+    <form>
+      <input id="run_input" type="text" onFocus="clearTimeout(done); this.value = '';" onBlur="runLine();">
+    </form>
+    <script src="script.js"></script>
 </body>
 </html>
